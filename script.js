@@ -3,14 +3,14 @@ const $$ = (selector, scope = document) => [...scope.querySelectorAll(selector)]
 
 const root = document.documentElement;
 const themeToggle = $('#themeToggle');
-const savedTheme = localStorage.getItem('kodekita-theme');
+const savedTheme = localStorage.getItem('progetrain-theme');
 if (savedTheme) root.dataset.theme = savedTheme;
 themeToggle.textContent = root.dataset.theme === 'dark' ? '☀' : '☾';
 
 themeToggle.addEventListener('click', () => {
   const nextTheme = root.dataset.theme === 'dark' ? 'light' : 'dark';
   root.dataset.theme = nextTheme;
-  localStorage.setItem('kodekita-theme', nextTheme);
+  localStorage.setItem('progetrain-theme', nextTheme);
   themeToggle.textContent = nextTheme === 'dark' ? '☀' : '☾';
   showToast(nextTheme === 'dark' ? 'Dark mode aktif 🌙' : 'Light mode aktif ☀️');
 });
@@ -42,7 +42,7 @@ const lessons = {
   HTML: {
     title: 'HTML: Struktur halaman',
     text: 'HTML (HyperText Markup Language) memberi struktur dan makna pada konten web melalui elemen seperti heading, paragraph, link, image, list, table, dan form.',
-    code: '<main>\n  <h1>Halo, KodeKita!</h1>\n  <p>Aku belajar HTML.</p>\n</main>'
+    code: '<main>\n  <h1>Halo, Progetrain!</h1>\n  <p>Aku belajar HTML.</p>\n</main>'
   },
   CSS: {
     title: 'CSS: Tampilan halaman',
@@ -52,7 +52,7 @@ const lessons = {
   JavaScript: {
     title: 'JavaScript: Interaksi halaman',
     text: 'JavaScript memberi perilaku pada website. Kita bisa membaca input, merespons klik, mengubah DOM, melakukan validasi, dan menjalankan logika.',
-    code: "button.addEventListener('click', () => {\n  alert('Halo, KodeKita!');\n});"
+    code: "button.addEventListener('click', () => {\n  alert('Halo, Progetrain!');\n});"
   }
 };
 
@@ -69,7 +69,7 @@ $$('.lesson-button').forEach(button => button.addEventListener('click', () => {
   lessonPanel.scrollIntoView({ behavior: 'smooth', block: 'center' });
 }));
 
-const progressKey = 'kodekita-progress';
+const progressKey = 'progetrain-progress';
 const completed = new Set(JSON.parse(localStorage.getItem(progressKey) || '[]'));
 function updateProgress() {
   const percent = Math.round((completed.size / 3) * 100);

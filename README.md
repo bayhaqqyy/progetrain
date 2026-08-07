@@ -1,10 +1,10 @@
-# KodeKita — Website Edukasi Web Development
+# Progetrain — Website Edukasi Web Development
 
-KodeKita adalah website edukasi satu halaman untuk pemula yang ingin mempelajari dasar HTML, CSS, dan JavaScript. Proyek dibuat dengan HTML5, custom CSS responsif, dan JavaScript vanilla tanpa framework wajib.
+Progetrain adalah website edukasi satu halaman untuk pemula yang ingin mempelajari dasar HTML, CSS, dan JavaScript. Proyek dibuat dengan HTML5, custom CSS responsif, dan JavaScript vanilla tanpa framework wajib.
 
 ## Cara menjalankan
 
-1. Buka folder `kodekita`.
+1. Buka folder `progetrain`.
 2. Klik dua kali `index.html`, atau buka dengan browser.
 3. Jika memakai VS Code, boleh dijalankan menggunakan ekstensi Live Server.
 
@@ -25,7 +25,7 @@ KodeKita adalah website edukasi satu halaman untuk pemula yang ingin mempelajari
 ## Struktur
 
 ```text
-kodekita/
+progetrain/
 ├── index.html
 ├── style.css
 ├── script.js
