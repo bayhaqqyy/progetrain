@@ -1,0 +1,277 @@
+<!doctype html>
+<html lang="id" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="KodeKita — platform belajar HTML, CSS, dan JavaScript untuk pemula.">
+  <title>KodeKita — Belajar Web Development</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Lewati ke konten utama</a>
+
+  <header class="site-header">
+    <nav class="navbar container" aria-label="Navigasi utama">
+      <a class="brand" href="#home" aria-label="KodeKita beranda"><span class="brand-mark">K</span><span>Kode<span>Kita</span></span></a>
+      <button class="menu-toggle" id="menuToggle" type="button" aria-expanded="false" aria-controls="navLinks" aria-label="Buka menu">☰</button>
+      <div class="nav-links" id="navLinks">
+        <a href="#home">Home</a>
+        <a href="#materi">Materi</a>
+        <a href="#jadwal">Jadwal</a>
+        <a href="#media">Media</a>
+        <a href="#quiz">Quiz</a>
+        <a href="#feedback">Feedback</a>
+      </div>
+      <div class="nav-actions">
+        <button class="icon-button" id="themeToggle" type="button" aria-label="Ubah tema" title="Ubah tema">☾</button>
+        <a class="button button-small" href="#materi">Mulai belajar</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero section" id="home">
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <p class="eyebrow"><span>●</span> Belajar ngoding, langkah demi langkah</p>
+          <h1>Bangun website pertamamu <span>mulai dari sini.</span></h1>
+          <p class="hero-lead">Pelajari dasar <strong>HTML, CSS, dan JavaScript</strong> dengan materi ringkas, contoh kode, latihan interaktif, dan alur belajar yang jelas.</p>
+          <div class="hero-actions">
+            <a class="button" href="#materi">Mulai belajar gratis <span>→</span></a>
+            <a class="button button-ghost" href="#quiz"><span class="play-dot">▶</span> Coba quiz</a>
+          </div>
+          <ul class="trust-list" aria-label="Keunggulan KodeKita">
+            <li>✓ Ramah pemula</li>
+            <li>✓ Materi terstruktur</li>
+            <li>✓ Belajar fleksibel</li>
+          </ul>
+        </div>
+
+        <div class="hero-visual reveal" aria-label="Ilustrasi editor kode">
+          <div class="orb orb-one"></div><div class="orb orb-two"></div>
+          <div class="code-window">
+            <div class="window-bar"><span></span><span></span><span></span><small>index.html</small></div>
+            <pre><code><span class="pink">&lt;section</span> <span class="sky">class</span>=<span class="green">"hero"</span><span class="pink">&gt;</span>
+  <span class="pink">&lt;h1&gt;</span>Halo, dunia! 👋<span class="pink">&lt;/h1&gt;</span>
+  <span class="pink">&lt;p&gt;</span>
+    Aku sedang belajar
+    web development.
+  <span class="pink">&lt;/p&gt;</span>
+<span class="pink">&lt;/section&gt;</span></code></pre>
+            <div class="floating-tag tag-html"><b>&lt;/&gt;</b><span>HTML<br><small>Struktur</small></span></div>
+            <div class="floating-tag tag-css"><b>#</b><span>CSS<br><small>Style</small></span></div>
+            <div class="floating-tag tag-js"><b>JS</b><span>JavaScript<br><small>Interaksi</small></span></div>
+          </div>
+        </div>
+      </div>
+      <div class="container stat-strip reveal">
+        <div><strong>3</strong><span>Learning path</span></div>
+        <div><strong>12+</strong><span>Topik dasar</span></div>
+        <div><strong>6</strong><span>Latihan mini</span></div>
+        <div><strong>100%</strong><span>Gratis dipelajari</span></div>
+      </div>
+    </section>
+
+    <section class="section section-soft" id="materi">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div><p class="eyebrow">Learning path</p><h2>Pilih jalur belajarmu</h2></div>
+          <p>Mulai dari fondasi, rapikan tampilannya, lalu buat halamanmu jadi interaktif.</p>
+        </div>
+
+        <div class="filters reveal" role="group" aria-label="Filter materi">
+          <button class="filter active" type="button" data-filter="all">Semua</button>
+          <button class="filter" type="button" data-filter="html">HTML</button>
+          <button class="filter" type="button" data-filter="css">CSS</button>
+          <button class="filter" type="button" data-filter="javascript">JavaScript</button>
+        </div>
+
+        <div class="course-grid">
+          <article class="course-card reveal" data-category="html">
+            <div class="course-icon html-icon">&lt;/&gt;</div>
+            <div class="card-top"><span class="pill html-pill">HTML</span><span class="level">Pemula</span></div>
+            <h3>HTML Fundamental</h3>
+            <p>Kenali struktur dasar halaman web dan elemen semantik yang membuat konten mudah dipahami.</p>
+            <ul class="topic-list">
+              <li>Heading, paragraph & formatting</li>
+              <li>Link, image, list & table</li>
+              <li>Form & semantic HTML</li>
+            </ul>
+            <div class="card-meta"><span>◷ 45 menit</span><span>4 topik</span></div>
+            <button class="text-link lesson-button" type="button" data-lesson="HTML">Pelajari HTML <span>→</span></button>
+          </article>
+
+          <article class="course-card reveal" data-category="css">
+            <div class="course-icon css-icon">#</div>
+            <div class="card-top"><span class="pill css-pill">CSS</span><span class="level">Pemula</span></div>
+            <h3>CSS Essentials</h3>
+            <p>Ubah struktur HTML menjadi antarmuka yang rapi, responsif, dan nyaman dilihat.</p>
+            <ul class="topic-list">
+              <li>Selector, color & typography</li>
+              <li>Box model & positioning</li>
+              <li>Flexbox, Grid & responsive</li>
+            </ul>
+            <div class="card-meta"><span>◷ 60 menit</span><span>4 topik</span></div>
+            <button class="text-link lesson-button" type="button" data-lesson="CSS">Pelajari CSS <span>→</span></button>
+          </article>
+
+          <article class="course-card reveal" data-category="javascript">
+            <div class="course-icon js-icon">JS</div>
+            <div class="card-top"><span class="pill js-pill">JavaScript</span><span class="level">Pemula</span></div>
+            <h3>JavaScript Basics</h3>
+            <p>Tambahkan logika dan interaksi agar website bisa merespons aksi dari pengguna.</p>
+            <ul class="topic-list">
+              <li>Variable & data type</li>
+              <li>Function & condition</li>
+              <li>DOM & event listener</li>
+            </ul>
+            <div class="card-meta"><span>◷ 75 menit</span><span>4 topik</span></div>
+            <button class="text-link lesson-button" type="button" data-lesson="JavaScript">Pelajari JavaScript <span>→</span></button>
+          </article>
+        </div>
+
+        <div class="lesson-panel reveal" id="lessonPanel" hidden>
+          <div>
+            <span class="pill" id="lessonBadge">HTML</span>
+            <h3 id="lessonTitle">Mengenal HTML</h3>
+            <p id="lessonText"></p>
+          </div>
+          <pre id="lessonCode"><code></code></pre>
+          <button class="button button-small" id="completeLesson" type="button">Tandai selesai ✓</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="jadwal">
+      <div class="container split-layout">
+        <div class="reveal">
+          <p class="eyebrow">7-day starter plan</p>
+          <h2>Belajar sedikit,<br>tapi konsisten.</h2>
+          <p class="muted">Jadwal sederhana untuk membangun kebiasaan. Setiap sesi fokus pada satu hasil kecil yang bisa langsung dicoba.</p>
+          <ol class="steps-list">
+            <li><span>1</span><div><strong>Pahami konsep</strong><small>Baca materi inti 15–20 menit.</small></div></li>
+            <li><span>2</span><div><strong>Coba sendiri</strong><small>Ketik ulang contoh, jangan sekadar copy.</small></div></li>
+            <li><span>3</span><div><strong>Uji pemahaman</strong><small>Kerjakan quiz dan cek hasilmu.</small></div></li>
+          </ol>
+        </div>
+        <div class="table-card reveal">
+          <table>
+            <caption>Rencana belajar web development 7 hari</caption>
+            <thead><tr><th>Hari</th><th>Fokus</th><th>Materi</th><th>Durasi</th></tr></thead>
+            <tbody>
+              <tr><td>01</td><td><span class="mini-dot html-bg"></span>HTML</td><td>Struktur & teks</td><td>30 mnt</td></tr>
+              <tr><td>02</td><td><span class="mini-dot html-bg"></span>HTML</td><td>Link, gambar, list</td><td>35 mnt</td></tr>
+              <tr><td>03</td><td><span class="mini-dot css-bg"></span>CSS</td><td>Selector & box model</td><td>40 mnt</td></tr>
+              <tr><td>04</td><td><span class="mini-dot css-bg"></span>CSS</td><td>Flexbox & responsive</td><td>45 mnt</td></tr>
+              <tr><td>05</td><td><span class="mini-dot js-bg"></span>JS</td><td>Variable & function</td><td>45 mnt</td></tr>
+              <tr><td>06</td><td><span class="mini-dot js-bg"></span>JS</td><td>DOM & event</td><td>50 mnt</td></tr>
+              <tr><td>07</td><td><span class="mini-dot project-bg"></span>Project</td><td>Mini landing page</td><td>60 mnt</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-dark" id="media">
+      <div class="container">
+        <div class="section-heading light reveal">
+          <div><p class="eyebrow">Belajar lewat media</p><h2>Lihat, dengar, praktikkan.</h2></div>
+          <p>Contoh penggunaan elemen gambar, video, dan audio HTML5 dalam satu pengalaman belajar.</p>
+        </div>
+        <div class="media-grid">
+          <article class="media-card reveal">
+            <div class="media-frame image-frame"><img src="assets/learning-illustration.svg" alt="Ilustrasi meja belajar dengan laptop berisi kode HTML, CSS, dan JavaScript"></div>
+            <div class="media-content"><span class="media-type">IMAGE</span><h3>Anatomi halaman web</h3><p>Struktur, tampilan, dan interaksi bekerja bersama membentuk satu website.</p></div>
+          </article>
+          <article class="media-card reveal">
+            <video class="media-frame" controls preload="metadata" poster="assets/learning-illustration.svg">
+              <source src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4" type="video/mp4">
+              Browser kamu belum mendukung video HTML5.
+            </video>
+            <div class="media-content"><span class="media-type">VIDEO HTML5</span><h3>Contoh elemen video</h3><p>Player ini mendemonstrasikan tag <code>&lt;video&gt;</code> dengan kontrol bawaan browser.</p></div>
+          </article>
+          <article class="media-card reveal audio-card">
+            <div class="audio-visual"><span>♫</span><div class="audio-bars" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></div>
+            <div class="media-content"><span class="media-type">AUDIO HTML5</span><h3>Teman fokus belajar</h3><p>Contoh tag <code>&lt;audio&gt;</code> yang bisa dipakai untuk podcast atau materi suara.</p>
+              <audio controls preload="none"><source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">Browser kamu belum mendukung audio HTML5.</audio>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="quiz">
+      <div class="container quiz-layout">
+        <div class="quiz-intro reveal">
+          <p class="eyebrow">Mini quiz</p>
+          <h2>Seberapa paham kamu?</h2>
+          <p>Jawab lima pertanyaan singkat. Skor akan dihitung otomatis dengan JavaScript.</p>
+          <div class="progress-card">
+            <div class="progress-top"><span>Progress belajarmu</span><strong id="progressLabel">0%</strong></div>
+            <div class="progress-track"><span id="progressBar"></span></div>
+            <small id="progressMessage">Selesaikan materi untuk menaikkan progress.</small>
+          </div>
+        </div>
+        <form class="quiz-card reveal" id="quizForm">
+          <div class="quiz-status"><span id="questionCount">Pertanyaan 1 dari 5</span><div class="question-dots" id="questionDots"></div></div>
+          <div id="quizContent"></div>
+          <div class="quiz-actions">
+            <button class="button button-ghost" id="prevQuestion" type="button">← Sebelumnya</button>
+            <button class="button" id="nextQuestion" type="button">Selanjutnya →</button>
+          </div>
+          <div class="quiz-result" id="quizResult" hidden></div>
+        </form>
+      </div>
+    </section>
+
+    <section class="section resources-section" id="resources">
+      <div class="container resource-box reveal">
+        <div><p class="eyebrow">Referensi lanjutan</p><h2>Jangan berhenti di sini.</h2><p>Gunakan dokumentasi resmi dan sumber belajar terpercaya untuk eksplorasi lebih dalam.</p></div>
+        <div class="resource-links">
+          <a href="https://developer.mozilla.org/" target="_blank" rel="noopener noreferrer"><span>MDN</span><div><strong>MDN Web Docs</strong><small>Dokumentasi web lengkap</small></div><b>↗</b></a>
+          <a href="https://www.w3schools.com/" target="_blank" rel="noopener noreferrer"><span>W3</span><div><strong>W3Schools</strong><small>Contoh dan latihan interaktif</small></div><b>↗</b></a>
+          <a href="https://web.dev/" target="_blank" rel="noopener noreferrer"><span>W.</span><div><strong>web.dev</strong><small>Praktik web modern</small></div><b>↗</b></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-soft" id="feedback">
+      <div class="container feedback-layout">
+        <div class="feedback-copy reveal"><p class="eyebrow">Feedback</p><h2>Bantu KodeKita jadi lebih baik.</h2><p>Punya saran materi atau pengalaman belajar yang mau dibagikan? Tulis lewat form ini.</p><blockquote>“Semua programmer hebat pernah memulai dari satu baris kode.”</blockquote></div>
+        <form class="feedback-form reveal" id="feedbackForm" novalidate>
+          <div class="form-row">
+            <label>Nama lengkap<input type="text" name="name" placeholder="Contoh: Rafli" required></label>
+            <label>Email<input type="email" name="email" placeholder="nama@email.com" required></label>
+          </div>
+          <label>Materi favorit
+            <select name="topic" required><option value="">Pilih materi</option><option>HTML</option><option>CSS</option><option>JavaScript</option></select>
+          </label>
+          <fieldset><legend>Penilaian</legend><div class="rating">
+            <label><input type="radio" name="rating" value="1" required><span>1</span></label><label><input type="radio" name="rating" value="2"><span>2</span></label><label><input type="radio" name="rating" value="3"><span>3</span></label><label><input type="radio" name="rating" value="4"><span>4</span></label><label><input type="radio" name="rating" value="5"><span>5</span></label>
+          </div></fieldset>
+          <label>Pesan<textarea name="message" rows="4" placeholder="Tulis saran atau pesanmu..." required></textarea></label>
+          <label class="check-label"><input type="checkbox" name="agreement" required> Saya setuju data digunakan untuk evaluasi pembelajaran.</label>
+          <button class="button" type="submit">Kirim feedback <span>→</span></button>
+          <p class="form-message" id="formMessage" role="status"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div><a class="brand footer-brand" href="#home"><span class="brand-mark">K</span><span>Kode<span>Kita</span></span></a><p>Belajar web development jadi lebih sederhana, terarah, dan menyenangkan.</p></div>
+      <div><strong>Belajar</strong><a href="#materi">Materi</a><a href="#jadwal">Jadwal</a><a href="#quiz">Quiz</a></div>
+      <div><strong>Eksplor</strong><a href="#media">Media</a><a href="#resources">Resources</a><a href="#feedback">Feedback</a></div>
+      <div><strong>Teknologi</strong><span>HTML5</span><span>CSS3</span><span>JavaScript ES6</span></div>
+    </div>
+    <div class="container footer-bottom"><span>© <span id="year"></span> KodeKita. Dibuat untuk pembelajaran.</span><a href="#home">Kembali ke atas ↑</a></div>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="script.js"></script>
+</body>
+</html>
